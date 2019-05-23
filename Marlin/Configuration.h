@@ -4,9 +4,9 @@
 #include "boards.h"
 
 // Printer type
-#define Three_Up  //Uncomment for ThreeUp
+//#define Three_Up  //Uncomment for ThreeUp
 //#define Two_Up  //Uncomment for OneUp
-//#define One_Up  //Uncomment for TwoUp
+#define One_Up  //Uncomment for TwoUp
 
 //Filament Drive Gear Type
 //#define Stainless_Gear  //Uncomment for New Gear
@@ -531,6 +531,7 @@ const bool Z_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the logic
 
 #define HOMING_FEEDRATE {50*60, 50*60, 4*60, 0}  // set the homing speeds (mm/min)
 
+//Fix this here
 #define DEFAULT_AXIS_STEPS_PER_UNIT   {88.88888888889,88.88888888889,1511.811023622047,E_Step}  // Steps per MM For One and Two Up printers. (X, Y, Z, E)
 #define DEFAULT_MAX_FEEDRATE          {500, 500, 5, 45}    // (mm/sec)    
 #define DEFAULT_MAX_ACCELERATION      {5000,5000,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
